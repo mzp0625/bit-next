@@ -1,4 +1,5 @@
 export const SERVER_BASE_URL = `https://conduit.productionready.io/api`;
+// export const SERVER_BASE_URL = `https://0d2eae4f-a900-4679-a085-240df77dea25.mock.pstmn.io/api`;
 
 export const APP_NAME = `conduit`;
 

@@ -7,6 +7,7 @@ import NavLink from "./NavLink";
 import { usePageDispatch } from "../../lib/context/PageContext";
 import checkLogin from "../../lib/utils/checkLogin";
 import storage from "../../lib/utils/storage";
+import { Button } from 'antd';
 
 const Navbar = () => {
   const setPage = usePageDispatch();
@@ -19,7 +20,7 @@ const Navbar = () => {
     <nav className="navbar navbar-light">
       <div className="container">
         <CustomLink className="navbar-brand" href="/" as="/">
-          <span onClick={handleClick}>conduit</span>
+          
         </CustomLink>
         <ul className="nav navbar-nav pull-xs-right">
           <li className="nav-item">
@@ -30,8 +31,9 @@ const Navbar = () => {
           <Maybe test={isLoggedIn}>
             <li className="nav-item">
               <NavLink href="/editor/new" as="/editor/new">
-                <i className="ion-compose" />
-                &nbsp;New Post
+                <Button type="primary">Write a Post</Button>
+                {/* <i className="ion-compose" /> */}
+                {/* &nbsp;New Post */}
               </NavLink>
             </li>
             <li className="nav-item">
