@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """Helper utilities and decorators."""
 from conduit.user.models import User  # noqa
-from conduit.exceptions import InvalidUsage
 from functools import wraps
 from flask_jwt_extended import current_user
 
